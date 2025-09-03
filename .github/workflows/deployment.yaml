@@ -1,7 +1,9 @@
 name: Deploy Pipeline
 
 on:
-  push
+  release:
+    types:
+      - published
 
 jobs:
   deploy-stage:
